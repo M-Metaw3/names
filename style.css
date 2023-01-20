@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+
+    overflow: hidden;
+}
+div {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-size: cover;
+    animation: animate 6s linear;
+}
+/* animatte edit the last thing */
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -3000%);
+        opacity: 0;
+    }
+}
